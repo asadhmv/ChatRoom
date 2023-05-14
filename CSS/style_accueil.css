@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+/*
+---------------YouTube CSS exemple Parfait--------------------
+
+https://www.youtube.com/watch?v=Cwm9qX9onq4*
+
+--------------------------------------------------------------
+*/
+
+body
+{
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.container
+{
+    width:100%;
+    background-color: #000;
+    display:grid;
+    grid-template-areas:"entete entete"
+                        "main_img main_img"
+                        "illustration explication"
+                        "exp ill"
+                        "pied_de_page pied_de_page";
+    padding:0px;
+    justify-content: space-evenly;
+}
+
+
+header{grid-area: entete;
+    height:75px;
+}
+.texte{grid-area: explication;}
+.image{grid-area: illustration;}
+.main_img{
+    grid-area: main_img;
+    height: 800px;
+    width: 100%;
+    background: radial-gradient( rgb(0, 21, 27), rgb(0,0,0));
+}
+
+footer{grid-area: pied_de_page;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:200px;
+    width: 100%;
+    background-color: black;
+    border-top:1px solid white;
+}
+
+section#description_noir
+{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    width:100%;
+}
+section#description_blanc
+{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    width:100%;
+}
+div.textenoir{
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: normal;
+    text-align: center;
+    text-justify:distribute-all-lines;
+    width:100%;
+}
+div.texte2{
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: normal;
+    text-align: center;
+    text-justify:distribute-all-lines;
+    width:100%;
+}
+
+
+div.texte{
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: normal;
+    text-align: center;
+    text-justify:distribute-all-lines;
+}
+button.connexion{
+    color:white;
+    font-weight: 900;
+    font-size: large;
+    position:absolute;
+    right:10px;
+    cursor:pointer;
+    background: linear-gradient(225deg, #26caf8 0%, #c625d0 100%);
+    padding:10px 40px ;
+    border-radius: 40px;
+    top: 18px;
+}

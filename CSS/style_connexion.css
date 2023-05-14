@@ -1,0 +1,87 @@
+body
+{
+    width:100%;
+    height:100%;
+}
+
+.container
+{
+    background-color: #000;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.item
+{
+    padding: 50px 100px 50px 100px;
+    border-radius: 50px;
+    border-style:solid;
+    border-color: #ffffff;
+    background: radial-gradient( rgb(0, 21, 27), rgb(0,0,0));
+}
+
+input
+{
+    cursor:text;
+    font-size: 20px;
+    border-radius: 30px;
+    padding:20px;
+    margin:7px;
+    color: white;
+    outline: none;
+    border:none;
+    background: none;
+}
+
+input.saise{
+    border-bottom:1px solid white;
+}
+
+button,input.connexion
+{
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:900;
+    border-radius: 5px;
+    margin:15px;
+    box-shadow: 0px 0px 0px 0 rgba(143, 64, 248, .25), 0px 0 px 0px 0px rgba(39, 200, 255, .5);
+    transition: all .5s;
+}
+
+button.inscription:hover
+{
+    box-shadow: 10px -10px 30px rgb(170, 0, 133, .25),-10px 10px 30px rgb(255, 136, 0, .25);
+    transform: translate(0, -5px);
+}
+
+button.inscription
+{
+    background: linear-gradient(225deg,#aa0085 0%, #ff8800 100%);
+    padding:10px 90px 10px 90px;
+    font-size:15px;
+    border-radius: 30px;
+    font-family:Impact;
+}
+
+input.connexion
+{
+    cursor:pointer;
+    background: linear-gradient(225deg, #26caf8 0%, #c625d0 100%);
+    justify-self: center;
+    padding:20px 100px 20px 100px;
+    border-radius: 30px;
+}
+
+input.connexion:hover
+{
+    box-shadow: 10px -10px 25px rgba(38, 202, 248, .25),-10px 10px 25px rgba(198, 37, 208, .25);
+    transform: translate(0, -5px);
+}
+
+@media(max-width:600px)
+{
+    .container{flex-direction: column;}
+}
