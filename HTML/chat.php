@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once("/var/www/html/INSACHAT/PHP/MVC/models/Chatting.php");
+require_once("/var/www/html/OnlineChat/PHP/MVC/models/Chatting.php");
 $chat = new Chatting();
 $_SESSION['msg']="";
 if(!isset($_SESSION['email']) || !isset($_SESSION['passwd']) ){

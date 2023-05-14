@@ -1,6 +1,6 @@
 <?php
 
-require_once("/var/www/html/INSACHAT/PHP/MVC/app/Model.php");
+require_once("/var/www/html/OnlineChat/PHP/MVC/app/Model.php");
 class Chatting extends Model{
     public function __construct(){
         $this->table="general_chat";

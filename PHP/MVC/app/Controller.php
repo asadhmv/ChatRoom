@@ -5,13 +5,13 @@
 
     public function loadModel(string $model){
 
-        require_once('/var/www/html/INSACHAT/PHP/MVC/' . 'models/'. $model . '.php');
+        require_once('/var/www/html/OnlineChat/PHP/MVC/' . 'models/'. $model . '.php');
         $this->$model=new $model();
 
 
     }
     public function render(){
-        require_once('/var/www/html/INSACHAT/HTML/chatpage.html');
+        require_once('/var/www/html/OnlineChat/HTML/chatpage.html');
     }
 
 }
